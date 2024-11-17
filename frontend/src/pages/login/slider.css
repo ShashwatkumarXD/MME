@@ -1,0 +1,26 @@
+/* CSS Animations */
+@keyframes slideNext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidePrev {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideNext {
+  animation: slideNext 0.5s forwards;
+}
+
+.animate-slidePrev {
+  animation: slidePrev 0.5s forwards;
+}

@@ -7,7 +7,7 @@ const Conversation = ({ conversation, lastIdx, emoji }) => {
   const isSelected = selectedConversation?._id === conversation._id;
   return (
     <>
-      <div className={`flex gap-2 items-center hover:bg-sky-500 rounded p-2 py-1 cursor-pointer
+      <div className={`flex  gap-2 items-center hover:bg-[#e9f7f7] rounded p-2 py-1 cursor-pointer
         ${isSelected ? "bg-sky-500" : ""}`} // css for user selection color
         onClick={() => setSelectedConversation(conversation)}
       >
@@ -19,8 +19,8 @@ const Conversation = ({ conversation, lastIdx, emoji }) => {
         </div>
 
         <div className='flex flex-col flex-1'>
-          <div className='flex gap-3 justify-between'>
-            <p className='font-bold text-gray-200'>{conversation.fullName}</p> 
+          <div className='flex gap-3 '>
+            <p className='font-bold text-lg text-[#06284c]'>{conversation.fullName}</p> 
             <span className='text-xl'>{emoji}</span>
           </div>
         </div>

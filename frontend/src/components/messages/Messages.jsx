@@ -14,7 +14,7 @@ useEffect(() => {
   }, 100);
 }, [messages]);
   return (
-    <div className='px-4 flex-1 overflow-auto'>
+    <div className='px-4 w-full overflow-auto bg-white h-full'>
       {/* <Message />
       <Message />
       <Message />

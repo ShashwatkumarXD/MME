@@ -22,7 +22,19 @@ function profile() {
           <a className='text-3xl font-bold text-black'>{authUser.fullName}</a>
         </div>
         <div>
-          <a className='font-bold'>@{authUser.username}</a>
+          <a className='font-bold italic'>@{authUser.username}</a>
+        </div>
+        <div className='flex flex-row gap-5 pt-5'>
+          <a className='text-'>EMAIL:</a>
+          <a>{authUser.email}</a>
+        </div>
+        <div className='flex flex-row gap-5'>
+          <a>PHONE NO:</a>
+          <a>{authUser.phoneNumber}</a>
+        </div>
+        <div className='flex flex-row gap-5'>
+          <a>GENDER:</a>
+          <a>{authUser.gender}</a>
         </div>
       </div>
       {/* <div className='absolute top-1 right-1 w-7 h-7 bg-white'></div> */}

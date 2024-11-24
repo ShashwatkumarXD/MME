@@ -1,93 +1,56 @@
-import React, { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+// import React, { useState } from "react";
+// import ChatBot from "react-chatbotify";
+// // import "react-chatbotify/dist/index.css";
 
-function Consultation() {
-  const [location, setLocation] = useState("");
-  const [coordinates, setCoordinates] = useState([51.505, -0.09]); // Default location (London)
-  const [places, setPlaces] = useState([]);
+// const Consultation = () => {
+//   const [isChatVisible, setIsChatVisible] = useState(false);
 
-  const handleLocationSubmit = async (e) => {
-    e.preventDefault();
+//   const flow = {
+//     start: {
+//       message: "Hello! How can I assist you with consultations?",
+//     },
+//   };
 
-    try {
-      // Fetch coordinates for the input location using a geocoding API
-      const geocodeRes = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(location)}&key=YOUR_GOOGLE_API_KEY`
-      );
-      
-      const geocodeData = await geocodeRes.json();
-      const { lat, lng } = geocodeData.results[0].geometry.location;
-      
-      const placesRes = await fetch(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=5000&type=hospital&keyword=prenatal&key=YOUR_GOOGLE_API_KEY`
-      );
-      
-      const placesData = await placesRes.json();
-      setPlaces(placesData.results);
-      
-    } catch (error) {
-      console.error("Error fetching location or places:", error);
-    }
-  };
+//   const toggleChat = () => {
+//     setIsChatVisible(!isChatVisible);
+//   };
 
-  return (
-    <div style={{ padding: "20px" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
-        Consultation: Find Prenatal Care Near You
-      </h1>
-      <form
-        onSubmit={handleLocationSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          marginBottom: "20px",
-        }}
-      >
-        <input
-          type="text"
-          placeholder="Enter your location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          style={{
-            padding: "10px",
-            width: "300px",
-            borderRadius: "5px",
-            border: "1px solid #ccc",
-            marginBottom: "10px",
-          }}
-        />
-        <button
-          type="submit"
-          style={{
-            padding: "10px 20px",
-            border: "none",
-            borderRadius: "5px",
-            backgroundColor: "#007BFF",
-            color: "white",
-            cursor: "pointer",
-          }}
-        >
-          Find Locations
-        </button>
-      </form>
+//   return (
+//     <div className="relative h-screen bg-gray-100 p-4">
+//       {/* Header or Navigation */}
+//       <ul className="flex space-x-4 p-4 bg-white shadow-md">
+//         <li
+//           className="cursor-pointer hover:scale-105 transform transition-transform duration-300"
+//           onClick={toggleChat}
+//         >
+//           CONSULTATIONS
+//         </li>
+//       </ul>
 
-      <div style={{ height: "500px", width: "100%" }}>
-        <MapContainer center={coordinates} zoom={13} style={{ height: "100%", width: "100%" }}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          {places.map((place, index) => (
-            <Marker key={index} position={[place.latitude, place.longitude]}>
-              <Popup>{place.name}</Popup>
-            </Marker>
-          ))}
-        </MapContainer>
-      </div>
-    </div>
-  );
-}
+//       {/* Content */}
+//       <div className="mt-10 text-center">
+//         <h1 className="text-2xl font-semibold">Consultation Page</h1>
+//         <p className="text-gray-600 mt-2">
+//           Click on "CONSULTATIONS" to open the chatbot for assistance.
+//         </p>
+//       </div>
 
-export default Consultation;
+//       {/* Chatbot Container */}
+//       <div
+//         className={`fixed top-0 right-0 h-screen w-80 bg-white shadow-lg transform transition-transform duration-300 ${
+//           isChatVisible ? "translate-x-0" : "translate-x-full"
+//         }`}
+//       >
+//         <button
+//           className="absolute top-2 left-2 bg-red-500 text-white rounded-full p-2"
+//           onClick={toggleChat}
+//         >
+//           ✕
+//         </button>
+//         <ChatBot flow={flow} />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Consultation;

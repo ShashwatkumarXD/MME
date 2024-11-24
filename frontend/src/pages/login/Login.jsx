@@ -1,8 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useLogin from '../../hooks/useLogin';
+// import ChatBot from 'react-chatbotify';
+// import Chatbot from '../../components/chatbotify/chatbotify'
 
 const Login = () => {
+
+  const flow = {
+    "start": {
+      "message": "Hello world!"
+    }
+  }
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -26,7 +34,7 @@ const Login = () => {
           <form onSubmit={handleSubmit}>
             <div>
               <label className='label p-2'>
-                <span className='text-base label-text'>Username</span>
+                <span className='text-base label-text text-white font-semibold'>Username</span>
               </label>
               <input
                 type='text'
@@ -38,7 +46,7 @@ const Login = () => {
             </div>
             <div>
               <label className='label'>
-                <span className='text-base label-text'>Password</span>
+                <span className='text-base label-text text-white font-semibold'>Password</span>
               </label>
               <input
                 type='password'
@@ -48,18 +56,19 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+            <Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block text-white'>
               {"Don't"} have an account?
             </Link>
 
             <div>
-              <button className='btn btn-block btn-sm mt-2 bg-cyan-800 border-none rounded-full' disabled={loading}>
+              <button className='btn btn-block btn-sm mt-9 bg-[#fa8072] font-bold text-white border-none rounded-lg' disabled={loading}>
                 {loading ? <span className='loading loading-spinner '></span> : "Login"}
               </button>
             </div>
           </form>
         </div>
       </div>
+      {/* <Chatbot/> */}
     </div>
   )
 }

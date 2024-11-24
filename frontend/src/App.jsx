@@ -9,15 +9,17 @@ import Landing from "./pages/landingPage/Landing";
 import Blog from "./pages/blog/Blog"
 import Profile from "./pages/profile/profile"
 import Navbar from "./pages/landingPage/Navbar";
-import Consultation from './pages/consultations/consultation'
+// import Consultation from './pages/consultations/consultation'
+import Findhelp from './pages/findHelp/findhelp';
+
 
 function App() {
   const { authUser } = useAuthContext();
   const location = useLocation();
 
   return (
-    <div className="h-screen">
-      {location.pathname !== '/login' && location.pathname !== '/profile' && <Navbar className="fixed top-0 left-0 w-screen z-50 shadow-md"/>}
+    <div className={`h-screen`}>
+      {location.pathname !== '/login' && location.pathname !== '/profile' && location.pathname !== '/signup' && <Navbar className="fixed top-0 left-0 w-screen z-50 shadow-md"/>}
 
       <div className=''>
         <Routes>
@@ -29,7 +31,9 @@ function App() {
           <Route path='/home' element={authUser ? <Home /> : <Navigate to="/login" />} />
           <Route path='/blog' element={authUser ? <Blog /> : <Navigate to="/login" />} />
           <Route path='/profile' element={authUser ? <Profile /> : <Navigate to="/login" />} />
-          <Route path='/consultation' element={authUser ? <Consultation /> : <Navigate to="/login" />} />
+          {/* <Route path='/consultation' element={authUser ? <Consultation /> : <Navigate to="/login" />} /> */}
+          <Route path='/findhelp' element={authUser ? <Findhelp /> : <Navigate to="/login" />} />
+          {/* <Route path="/consultation" element={<Consultation />} /> */}
 
         </Routes>
         <Toaster />

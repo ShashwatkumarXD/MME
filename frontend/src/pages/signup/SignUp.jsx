@@ -135,7 +135,9 @@ const SignUp = () => {
 			<div className="w-screen h-screen bg-cover bg-center flex flex-row justify-end px-16 py-10 " style={{ backgroundImage: `url("/bg3.png")` }}>
 				<div className='w-[40%] py-6 px-8 rounded-lg shadow-md bg-cyan-700 flex flex-col items-center'>
 					<div className="welcm flex flex-col items-center p-6">
-						<div className='circle w-10 h-10 bg-orange-400 rounded-full'></div>
+						<div className='circle bg-orange-400 rounded-full'>
+						<img src="/logo2.png" className='rounded-full w-14 h-14' alt="logo" href="#" />
+						</div>
 						<div>
 							<a className="text-2xl font-bold text-white">Hi Come, join us! </a>
 						</div>

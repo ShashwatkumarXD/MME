@@ -40,7 +40,7 @@ function Chatbotify() {
 
 
   return (
-    <div className="p-4">
+    <div className="p-4 z-0">
       <ChatBotProvider>
         <ChatBot
           id="my-chatbot-id"

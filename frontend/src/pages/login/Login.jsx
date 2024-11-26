@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useLogin from '../../hooks/useLogin';
-// import ChatBot from 'react-chatbotify';
-// import Chatbot from '../../components/chatbotify/chatbotify'
 
 const Login = () => {
 
@@ -27,7 +25,7 @@ const Login = () => {
       <div className="flex flex-col ml-[900px] justify-center h-screen p-8">
         <div className='w-[400px] py-16 px-10 rounded-lg shadow-[10px_10px_15px_rgba(0,0,0,0.5)] bg-cyan-700'>
           <div className='flex justify-center mb-2'>
-            <img src="" alt="logo" />
+            <img src="/logo2.png" className='rounded-full w-16 h-16' alt="logo" />
           </div>
           <h1 className='text-3xl font-semibold text-center text-white mb-5'>Welcome back!</h1>
 
@@ -61,14 +59,13 @@ const Login = () => {
             </Link>
 
             <div>
-              <button className='btn btn-block btn-sm mt-9 bg-[#fa8072] font-bold text-white border-none rounded-lg' disabled={loading}>
+              <button className='btn btn-block btn-sm mt-9 bg-[#fa8072] font-bold text-white border-none rounded-lg'  disabled={loading}>
                 {loading ? <span className='loading loading-spinner '></span> : "Login"}
               </button>
             </div>
           </form>
         </div>
       </div>
-      {/* <Chatbot/> */}
     </div>
   )
 }

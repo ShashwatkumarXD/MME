@@ -93,12 +93,16 @@ function Landing() {
       </div>
       <div className=" h-screen bg-white w-full">
         <div className='flex flex-row'>
-          <div className='flex flex-col w-[25%] bg-red-100 h-screen'>
-            <div></div>
-            <div></div>
+          <div className='flex flex-col w-[25%] h-screen justify-center items-center'>
+            <div className='w-full h-1/2 p-1'>
+              <img src='https://s3-alpha-sig.figma.com/img/770a/510b/3eabdea40f01c606dd8e5d2153f0bdda?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WyCUm00XnNzd8WxXJHksy1k54n6I1jkm2Ja12enU7mHdy~QQylnzBgpo8KinK9kWFoxsw~nFy4QB~BrgLwX913wyJyQDph3ug04wsy1MuaSJQfmyOxdNVx1lErpDGDfIZPdv82j0oSZUHuKizfh8UaZXlklwU6kJg2tJg0sKfShNXsWWoU-~3exD-vkcxo42RPpuxC2TM~jy~0DLFP1LuyiU~ft3toIKyRNsvzpm0VaZuHN6j2aRy01lHnuwVswTzQPyycSF7pUb6K8KEvaVAsq9J9jzbS5VmdeDCcJ9K8pqPxTBfnUpNURLRGzjwQYH3gHPEdjcseL~PgYDIk~-RQ__' className=''></img>
+            </div>
+            <div className='w-full h-1/2 p-1'>
+              <img src='https://s3-alpha-sig.figma.com/img/397d/149b/3f0078f11d40a683b616362b4120b719?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cPHXsmWpKJ~EJZa08Y0zcGY2TeJv4wsQrh9WeSVAImAw9Q00CYwTywspkfAoqZ7Ly7scPre4zir26Oj9lgkcA3mspCAdUqiky4CVt~CRwh-v~UhFQsrcizoczjCx5ytyvAvllpTJCidSK~qy2H5yBL087WOhGtipOUwdNfytn9wZDdUs3BvsMp3XtQidPkE-pkhTMc1Mi4sE5iCDUGdj3OvU3vuviyyXdUg53HDrnCMxD-BAfqVs1e4r~dWD1J9JFUL93dViPBAusDDoiqg5YG-qs~T7MmSfbgEG8ulfrm-fBr4G~gdSIQ9T2Nu~wX8yKeKGmRl6Y4trLutUthSrEA__' className='h-full w-full'></img>
+            </div>
           </div>
-          <div className='w-[25%] bg-blue-500'>
-
+          <div className='w-[25%] bg-cover bg-center'>
+            <img src='https://s3-alpha-sig.figma.com/img/e4e0/752a/ee44acdf8d243fd78d5fed68a30f7f05?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oj5OAqBQNZ7rpZ-8yZHWEcYr-SOe3nlJR1y0bczU6VZfWnyzBTeLuzXg7Stw8ICpaD~3uUJ1iPR30G4geXQCpsDTcNfb40vmaqBWD4cnep0aB-qn-mU2nL6-CqpjLlE11t6hijl4aO9-SDn8CWxmQFdrH9CFxflVbWMWKboAOJHJW0gxVC1iNzcFH~OrckO80bX-pWP5byChMVZyr~w5OGU8twkMDVnso8I7nwN8qamA9W5sMw9HlGVfiNQgCtQmY3mMxWwvOBwJiSzVRiUtvJFNPHRxQLVq-17jSIjn89phEV03EYgLSqzGurYXdK4fWnQCOpPahdhFIAvSLuOl4Q__' className='p-1 h-full'></img>
           </div>
           <div className='w-[25%] bg-green-500'></div>
           <div className='w-[25%] bg-yellow-500'></div>
@@ -108,24 +112,24 @@ function Landing() {
         <div className='flex flex-col w-full h-full'>
           <div className='flex justify-between items-center w-full h-[10%] px-16'>
             <a className='text-[35px] font-bold text-[#ef6351]'>Check out interesting articles</a>
-            <a href='#' className='font-bold underline text-[#ef6351]'>SEE ALL</a>
+            <a href='https://evidencebasedbirth.com/' className='font-bold underline text-[#ef6351]'>SEE ALL</a>
           </div>
           <div className='flex flex-row  gap-8 h-[90%] w-full mt-6'>
             <div className='w-1/3 h-full p-4'>
               <div className='h-full w-full flex flex-col p-4 gap-3 shadow-md hover:shadow-2xl duration-300'>
                 <div className='w-full h-[60%] border-[2px]'>
+                  <img src='/1image.jpg'
+                  className='w-full h-full'>
+                  </img>
                 </div>
                 <div>
-                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>BuiIding a stronger brana
-                    Nith no-code tools</a>
+                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>Painless Birth and Pain Perception During Childbirth</a>
                 </div>
                 <div>
-                  <a className='text-[#89b9c9] font-medium'>Learn about taking on a content design
-                    mindset from an expert in brand strategy <br />
-                    and content design.</a>
+                  <a className='text-[#89b9c9] font-medium'>Labor pain perception is shaped by psychological, environmental, and social factors, affecting satisfaction and pain relief.</a>
                 </div>
                 <div>
-                  <a href='#' className='text-black font-bold'>READ MORE ➞</a>
+                  <a href='https://evidencebasedbirth.com/painless-birth-pain-perception-childbirth/' className='text-black font-bold'>READ MORE ➞</a>
                 </div>
               </div>
             </div>
@@ -133,18 +137,17 @@ function Landing() {
             <div className='w-1/3 h-full p-4'>
               <div className='h-full w-full flex flex-col p-4 gap-3 shadow-md hover:shadow-2xl duration-300'>
                 <div className='w-full h-[60%] border-[2px]'>
+                  <img src='/3image.png'
+                  className='w-full h-full'></img>
                 </div>
                 <div>
-                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>BuiIding a stronger brana
-                    Nith no-code tools</a>
+                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>Massage for pain relief during labor</a>
                 </div>
                 <div>
-                  <a className='text-[#89b9c9] font-medium'>Learn about taking on a content design
-                    mindset from an expert in brand strategy <br />
-                    and content design.</a>
+                  <a className='text-[#89b9c9] font-medium'>Massage during labor may reduce pain and improve comfort, with trial evidence supporting its benefits.</a>
                 </div>
                 <div>
-                  <a href='#' className='text-black font-bold'>READ MORE ➞</a>
+                  <a href='https://evidencebasedbirth.com/massage-for-pain-relief-during-labor/' className='text-black font-bold'>READ MORE ➞</a>
                 </div>
               </div>
             </div>
@@ -152,18 +155,16 @@ function Landing() {
             <div className='w-1/3 h-full p-4'>
               <div className='h-full w-full flex flex-col p-4 gap-3 shadow-md hover:shadow-2xl duration-300'>
                 <div className='w-full h-[60%] border-[2px]'>
+                  <img src='/4image.jpg' className='w-full h-full'></img>
                 </div>
                 <div>
-                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>BuiIding a stronger brana
-                    Nith no-code tools</a>
+                  <a className='text-[20px] leading-none font-bold text-[#73cdd0]'>A Positive Hospital Waterbirth Story</a>
                 </div>
                 <div>
-                  <a className='text-[#89b9c9] font-medium'>Learn about taking on a content design
-                    mindset from an expert in brand strategy <br />
-                    and content design.</a>
+                  <a className='text-[#89b9c9] font-medium'>Katrina Hull shares her empowering hospital waterbirth story, highlighting her preparation through the EBB childbirth class and overcoming complications.</a>
                 </div>
                 <div>
-                  <a href='#' className='text-black font-bold'>READ MORE ➞</a>
+                  <a href='https://evidencebasedbirth.com/ebb-287-a-positive-hospital-waterbirth-story-with-ebb-childbirth-class-graduate-katrina-hull/' className='text-black font-bold'>READ MORE ➞</a>
                 </div>
               </div>
             </div>
@@ -174,7 +175,9 @@ function Landing() {
       <div className="h-[500px] bg-gradient-to-b from-[#127090] to-[#072c50] w-full p-14">
         <div className='flex flex-row p-10 h-full w-full'>
           <div className='flex flex-col w-full h-full gap-6'>
-            <div className='circle w-10 h-10 bg-orange-400 rounded-full'></div>
+            <div className='circle w-14 h-14 bg-orange-400 rounded-full'>
+            <img src="/logo2.png" className='rounded-full w-14 h-14' alt="logo" />
+            </div>
             <div className=''>
               <a className='font-bold'>Empowering you through every step of your pregnancy journey with <br /> reliable resources, a supportive community, and expert advice.</a>
             </div>

@@ -96,7 +96,7 @@ const Navbar = () => {
       {/* Chatbot */}
       {isChatVisible && (
         <div
-          className="fixed  h-24 right-0 bottom-7 w-80 transition-transform transform z-40">
+          className="fixed  h-24 right-0 bottom-7 w-80 transition-transform transform z-30">
           <div className="p-4">
             <ChatBot />
           </div>

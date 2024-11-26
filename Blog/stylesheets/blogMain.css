@@ -1,0 +1,12 @@
+body {
+    background-color: #fef8f8;
+  }
+  
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8% 12%;
+    text-wrap:wrap;
+    
+  }

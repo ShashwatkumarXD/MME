@@ -1,0 +1,32 @@
+.blogTable {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 2% auto;
+    position: relative;
+    top: 50%;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #06284C;
+}
+
+.blogTable th {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    background-color: #73CDD0;
+    color: white;
+    text-align: left;
+}
+
+.blogTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.blogTable tr:nth-child(even) {
+    background-color: #ecfeff;
+}
+
+.blogTable tr:hover {
+    /* background-color: #fdf0ef; */
+    color: #EF6351;
+}
